@@ -36,8 +36,7 @@
 		CB5600F31BDD310600E8B81B /* Lost In TranslationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lost In TranslationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5600F71BDD310600E8B81B /* Lost_In_TranslationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lost_In_TranslationTests.swift; sourceTree = "<group>"; };
 		CB5600F91BDD310600E8B81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB5601021BDD31F400E8B81B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		CB5601031BDD31F400E8B81B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CB5601021BDD31F400E8B81C /* ksh-Latn_DE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ksh-Latn_DE"; path = "ksh-Latn_DE.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +161,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"ksh-Latn_DE",
 			);
 			mainGroup = CB5600D61BDD310600E8B81B;
 			productRefGroup = CB5600E01BDD310600E8B81B /* Products */;
@@ -227,7 +227,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB5600E71BDD310600E8B81B /* Base */,
-				CB5601021BDD31F400E8B81B /* de */,
+				CB5601021BDD31F400E8B81C /* ksh-Latn_DE */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -236,7 +236,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB5600EC1BDD310600E8B81B /* Base */,
-				CB5601031BDD31F400E8B81B /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -392,6 +391,7 @@
 				CB5600FE1BDD310600E8B81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB5600FF1BDD310600E8B81B /* Build configuration list for PBXNativeTarget "Lost In TranslationTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +400,7 @@
 				CB5601011BDD310600E8B81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

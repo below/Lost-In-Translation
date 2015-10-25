@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var languageLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        languageLabel.text = "Preferred Localization: \(NSBundle.mainBundle().preferredLocalizations.first)"
     }
 
     override func didReceiveMemoryWarning() {
