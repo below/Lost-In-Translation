@@ -36,6 +36,8 @@
 		CB5600F31BDD310600E8B81B /* Lost In TranslationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lost In TranslationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5600F71BDD310600E8B81B /* Lost_In_TranslationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lost_In_TranslationTests.swift; sourceTree = "<group>"; };
 		CB5600F91BDD310600E8B81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5601021BDD31F400E8B81B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		CB5601031BDD31F400E8B81B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB5600E71BDD310600E8B81B /* Base */,
+				CB5601021BDD31F400E8B81B /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB5600EC1BDD310600E8B81B /* Base */,
+				CB5601031BDD31F400E8B81B /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
