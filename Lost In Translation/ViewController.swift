@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var languageLabel: UILabel!
+    @IBOutlet weak var locIdentifierLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        languageLabel.text = "Preferred Localization: \(NSBundle.mainBundle().preferredLocalizations.first)"
+        languageLabel.text = "Preferred Localization: \(NSBundle.mainBundle().preferredLocalizations.first!)"
+        locIdentifierLabel.text = NSLocale.currentLocale().localeIdentifier
     }
 
     override func didReceiveMemoryWarning() {
