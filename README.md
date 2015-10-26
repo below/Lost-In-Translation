@@ -2,7 +2,7 @@
 
 ## Update
 
-As [Twitter Page for Michael Ochs](https://twitter.com/_mochs "@_mochs") found out, passing `-AppleLanguages (ksh-Latn_DE)` as a lauch argument will show the Kölsch localization. I have added a "Start in ksh-Latn_DE" shared Scheme.
+As [@_mochs](https://twitter.com/_mochs "@_mochs") found out, passing `-AppleLanguages (ksh-Latn_DE)` as a lauch argument will show the Kölsch localization. I have added a "Start in ksh-Latn_DE" shared Scheme.
 
 ## An attempt to localize into ksh-Latn_DE
 
