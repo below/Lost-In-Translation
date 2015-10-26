@@ -1,4 +1,9 @@
 # Lost-In-Translation
+
+## Update
+
+As [Twitter Page for Michael Ochs](https://twitter.com/_mochs "@_mochs") found out, passing `-AppleLanguages (ksh-Latn_DE)` as a lauch argument will show the Kölsch localization. I have added a "Start in ksh-Latn_DE" shared Scheme.
+
 ## An attempt to localize into ksh-Latn_DE
 
 This project is an attempt to localize an iOS App into "Colonian (Latin, Germany)", otherwise known as "Kölsch".
