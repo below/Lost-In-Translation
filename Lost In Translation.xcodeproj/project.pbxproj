@@ -37,6 +37,7 @@
 		CB5600F71BDD310600E8B81B /* Lost_In_TranslationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lost_In_TranslationTests.swift; sourceTree = "<group>"; };
 		CB5600F91BDD310600E8B81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5601021BDD31F400E8B81C /* ksh-Latn_DE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ksh-Latn_DE"; path = "ksh-Latn_DE.lproj/Main.strings"; sourceTree = "<group>"; };
+		CB5601071BDE1FE700E8B81B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +229,7 @@
 			children = (
 				CB5600E71BDD310600E8B81B /* Base */,
 				CB5601021BDD31F400E8B81C /* ksh-Latn_DE */,
+				CB5601071BDE1FE700E8B81B /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
