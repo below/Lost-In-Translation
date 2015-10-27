@@ -1,3 +1,9 @@
 
+/* Class = "UILabel"; text = "Label"; ObjectID = "YlK-cG-TIM"; */
+"YlK-cG-TIM.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oA4-5F-hMn"; */
+"oA4-5F-hMn.text" = "Label";
+
 /* Class = "UILabel"; text = "You've lost your LA privileges"; ObjectID = "pXw-co-8NO"; */
-"pXw-co-8NO.text" = "You've lost your LA privileges";
+"pXw-co-8NO.text" = "Ich will nicht nach Berlin!";

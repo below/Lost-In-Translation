@@ -38,6 +38,7 @@
 		CB5600F91BDD310600E8B81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5601021BDD31F400E8B81C /* ksh-Latn_DE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ksh-Latn_DE"; path = "ksh-Latn_DE.lproj/Main.strings"; sourceTree = "<group>"; };
 		CB5601071BDE1FE700E8B81B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		CB5601081BDFD5B200E8B81B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +231,7 @@
 				CB5600E71BDD310600E8B81B /* Base */,
 				CB5601021BDD31F400E8B81C /* ksh-Latn_DE */,
 				CB5601071BDE1FE700E8B81B /* fr */,
+				CB5601081BDFD5B200E8B81B /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
