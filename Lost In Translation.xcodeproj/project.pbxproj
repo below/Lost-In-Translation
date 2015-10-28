@@ -13,6 +13,10 @@
 		CB5600EA1BDD310600E8B81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5600E91BDD310600E8B81B /* Assets.xcassets */; };
 		CB5600ED1BDD310600E8B81B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5600EB1BDD310600E8B81B /* LaunchScreen.storyboard */; };
 		CB5600F81BDD310600E8B81B /* Lost_In_TranslationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5600F71BDD310600E8B81B /* Lost_In_TranslationTests.swift */; };
+		CB56010D1BDFEFAB00E8B81B /* LocaleUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56010B1BDFEEBC00E8B81B /* LocaleUtilities.swift */; };
+		CB56010E1BDFEFAD00E8B81B /* LocaleUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56010B1BDFEEBC00E8B81B /* LocaleUtilities.swift */; };
+		CB5601101BDFF2CA00E8B81B /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56010F1BDFF2CA00E8B81B /* MasterTableViewController.swift */; };
+		CB5601121BE02D5C00E8B81B /* ArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5601111BE02D5C00E8B81B /* ArrayTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,9 @@
 		CB5601021BDD31F400E8B81C /* ksh-Latn_DE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ksh-Latn_DE"; path = "ksh-Latn_DE.lproj/Main.strings"; sourceTree = "<group>"; };
 		CB5601071BDE1FE700E8B81B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		CB5601081BDFD5B200E8B81B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		CB56010B1BDFEEBC00E8B81B /* LocaleUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleUtilities.swift; sourceTree = "<group>"; };
+		CB56010F1BDFF2CA00E8B81B /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		CB5601111BE02D5C00E8B81B /* ArrayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +87,11 @@
 		CB5600E11BDD310600E8B81B /* Lost In Translation */ = {
 			isa = PBXGroup;
 			children = (
+				CB56010B1BDFEEBC00E8B81B /* LocaleUtilities.swift */,
 				CB5600E21BDD310600E8B81B /* AppDelegate.swift */,
 				CB5600E41BDD310600E8B81B /* ViewController.swift */,
+				CB56010F1BDFF2CA00E8B81B /* MasterTableViewController.swift */,
+				CB5601111BE02D5C00E8B81B /* ArrayTableViewController.swift */,
 				CB5600E61BDD310600E8B81B /* Main.storyboard */,
 				CB5600E91BDD310600E8B81B /* Assets.xcassets */,
 				CB5600EB1BDD310600E8B81B /* LaunchScreen.storyboard */,
@@ -201,7 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB56010E1BDFEFAD00E8B81B /* LocaleUtilities.swift in Sources */,
+				CB5601121BE02D5C00E8B81B /* ArrayTableViewController.swift in Sources */,
 				CB5600E51BDD310600E8B81B /* ViewController.swift in Sources */,
+				CB5601101BDFF2CA00E8B81B /* MasterTableViewController.swift in Sources */,
 				CB5600E31BDD310600E8B81B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB56010D1BDFEFAB00E8B81B /* LocaleUtilities.swift in Sources */,
 				CB5600F81BDD310600E8B81B /* Lost_In_TranslationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

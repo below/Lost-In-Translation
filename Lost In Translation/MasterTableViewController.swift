@@ -1,0 +1,103 @@
+//
+//  MasterTableViewController.swift
+//  Lost In Translation
+//
+//  Created by Alexander v. Below on 27.10.15.
+//  Copyright © 2015 Alexander von Below. All rights reserved.
+//
+
+import UIKit
+
+class MasterTableViewController: UITableViewController {
+
+    let localeUtilities = LocaleUtitlies()
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 2
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return 1
+        default:
+            return 2
+        }
+    }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell : UITableViewCell!
+        
+        switch indexPath.section {
+        case 0:
+            cell = tableView.dequeueReusableCellWithIdentifier("BasicInfo", forIndexPath: indexPath)
+            cell.textLabel!.text = "Bar"
+            switch indexPath.row {
+            case 0:
+                let identifier = localeUtilities.locale.localeIdentifier
+                cell.detailTextLabel?.text = identifier
+                let text : String!
+                if let displayname = localeUtilities.locale.displayNameForKey(NSLocaleIdentifier, value: identifier) {
+                    text = displayname;
+                }
+                else {
+                    text = identifier
+                }
+                print (cell.textLabel?.text)
+                
+                cell.textLabel!.text = text
+                print (cell.textLabel?.text)
+            default: break
+                
+            }
+        case 1:
+            cell = tableView.dequeueReusableCellWithIdentifier("DisclosureCell", forIndexPath: indexPath)
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = NSBundle.mainBundle().preferredLocalizations.first!
+                cell.detailTextLabel?.text = "preferredLocalization"
+            case 1:
+                cell.textLabel?.text = NSBundle.mainBundle().localizations.first!
+                cell.detailTextLabel!.text = "localization"
+            default:
+                break
+            }
+        default: break
+        }
+
+
+        return cell
+    }
+
+
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        return
+        
+        if segue.identifier == "showBasicInfo" {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ViewController
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            controller.navigationItem.leftItemsSupplementBackButton = true
+        } else if segue.identifier == "showArrayInfo" {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ViewController
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                if indexPath.section == 1 {
+
+                }
+            }
+        }
+    }
+
+}
