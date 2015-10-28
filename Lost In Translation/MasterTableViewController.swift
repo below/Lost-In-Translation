@@ -1,4 +1,4 @@
-//
+ //
 //  MasterTableViewController.swift
 //  Lost In Translation
 //
@@ -82,19 +82,25 @@ class MasterTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        return
         
-        if segue.identifier == "showBasicInfo" {
-            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ViewController
+        if segue.identifier == "showObjects" {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ArrayTableViewController
             controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
             controller.navigationItem.leftItemsSupplementBackButton = true
-        } else if segue.identifier == "showArrayInfo" {
-            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ViewController
-            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-
+            
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 if indexPath.section == 1 {
+                    switch (indexPath.row) {
+                    case 0:
+                        controller.objects = NSBundle.mainBundle().preferredLocalizations
+                        controller.title = NSLocalizedString("Preferred Localizations", comment: "### Do not localize")
+                    case 1:
+                        controller.objects = NSBundle.mainBundle().localizations
+                        controller.title = NSLocalizedString("Localizations", comment: "### Do not localize")
 
+                    default:
+                        break
+                    }
                 }
             }
         }
