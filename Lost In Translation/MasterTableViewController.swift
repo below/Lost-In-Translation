@@ -51,10 +51,8 @@ class MasterTableViewController: UITableViewController {
                 else {
                     text = identifier
                 }
-                print (cell.textLabel?.text)
                 
                 cell.textLabel!.text = text
-                print (cell.textLabel?.text)
             default: break
                 
             }
