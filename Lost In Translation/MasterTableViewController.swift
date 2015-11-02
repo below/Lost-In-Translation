@@ -29,7 +29,7 @@ class MasterTableViewController: UITableViewController {
         case 0:
             return 1
         default:
-            return 2
+            return 3
         }
     }
 
@@ -65,6 +65,9 @@ class MasterTableViewController: UITableViewController {
                 cell.textLabel?.text = NSBundle.mainBundle().preferredLocalizations.first!
                 cell.detailTextLabel?.text = "preferredLocalization"
             case 1:
+                cell.textLabel?.text = NSLocale.preferredLanguages().first!
+                cell.detailTextLabel?.text = "preferredLanguage"
+            case 2:
                 cell.textLabel?.text = NSBundle.mainBundle().localizations.first!
                 cell.detailTextLabel!.text = "localization"
             default:
@@ -93,10 +96,13 @@ class MasterTableViewController: UITableViewController {
                     switch (indexPath.row) {
                     case 0:
                         controller.objects = NSBundle.mainBundle().preferredLocalizations
-                        controller.title = NSLocalizedString("Preferred Localizations", comment: "### Do not localize")
+                        controller.title = NSLocalizedString("NSBundle Preferred Localizations", comment: "### Do not localize")
                     case 1:
+                        controller.objects = NSLocale.preferredLanguages()
+                        controller.title = NSLocalizedString("NSLocale Languages", comment: "### Do not localize")
+                    case 2:
                         controller.objects = NSBundle.mainBundle().localizations
-                        controller.title = NSLocalizedString("Localizations", comment: "### Do not localize")
+                        controller.title = NSLocalizedString("NSBundle Localizations", comment: "### Do not localize")
 
                     default:
                         break
