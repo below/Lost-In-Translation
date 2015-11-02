@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB32C0701BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB32C06F1BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf */; };
 		CB5600E31BDD310600E8B81B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5600E21BDD310600E8B81B /* AppDelegate.swift */; };
 		CB5600E51BDD310600E8B81B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5600E41BDD310600E8B81B /* ViewController.swift */; };
 		CB5600E81BDD310600E8B81B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5600E61BDD310600E8B81B /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB32C06F1BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Klingon-pIqaD-HaSta.ttf"; path = "klingon-piqad-hasta-203/Klingon-pIqaD-HaSta.ttf"; sourceTree = "<group>"; };
+		CB32C0711BE769250026CEEF /* tlh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tlh; path = tlh.lproj/Main.strings; sourceTree = "<group>"; };
 		CB5600DF1BDD310600E8B81B /* Lost In Translation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lost In Translation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5600E21BDD310600E8B81B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5600E41BDD310600E8B81B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +43,7 @@
 		CB5600F31BDD310600E8B81B /* Lost In TranslationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lost In TranslationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5600F71BDD310600E8B81B /* Lost_In_TranslationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lost_In_TranslationTests.swift; sourceTree = "<group>"; };
 		CB5600F91BDD310600E8B81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB5601021BDD31F400E8B81C /* ksh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ksh"; path = "ksh.lproj/Main.strings"; sourceTree = "<group>"; };
+		CB5601021BDD31F400E8B81C /* ksh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ksh; path = ksh.lproj/Main.strings; sourceTree = "<group>"; };
 		CB5601071BDE1FE700E8B81B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		CB5601081BDFD5B200E8B81B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		CB56010B1BDFEEBC00E8B81B /* LocaleUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleUtilities.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 				CB5600E91BDD310600E8B81B /* Assets.xcassets */,
 				CB5600EB1BDD310600E8B81B /* LaunchScreen.storyboard */,
 				CB5600EE1BDD310600E8B81B /* Info.plist */,
+				CB32C06F1BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf */,
 			);
 			path = "Lost In Translation";
 			sourceTree = "<group>";
@@ -173,7 +177,7 @@
 			knownRegions = (
 				en,
 				Base,
-				"ksh",
+				ksh,
 			);
 			mainGroup = CB5600D61BDD310600E8B81B;
 			productRefGroup = CB5600E01BDD310600E8B81B /* Products */;
@@ -194,6 +198,7 @@
 				CB5600ED1BDD310600E8B81B /* LaunchScreen.storyboard in Resources */,
 				CB5600EA1BDD310600E8B81B /* Assets.xcassets in Resources */,
 				CB5600E81BDD310600E8B81B /* Main.storyboard in Resources */,
+				CB32C0701BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +251,7 @@
 				CB5601021BDD31F400E8B81C /* ksh */,
 				CB5601071BDE1FE700E8B81B /* fr */,
 				CB5601081BDFD5B200E8B81B /* de */,
+				CB32C0711BE769250026CEEF /* tlh */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
