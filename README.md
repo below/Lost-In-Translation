@@ -1,5 +1,9 @@
 # Lost-In-Translation
 
+## Update Nov 2nd 2015
+
+**It is working!** Being more general seems to be a good idea. After examining `+NSLocale preferredLanguages`, I renamed the localization directory to `ksh.lproj` and things work as expected!
+
 ## Update
 
 As [@_mochs](https://twitter.com/_mochs "@_mochs") found out, passing `-AppleLanguages (ksh-Latn_DE)` as a lauch argument will show the Kölsch localization. I have added a "Start in ksh-Latn_DE" shared Scheme.
