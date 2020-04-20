@@ -172,10 +172,9 @@
 			};
 			buildConfigurationList = CB5600DA1BDD310600E8B81B /* Build configuration list for PBXProject "Lost In Translation" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				ksh,
