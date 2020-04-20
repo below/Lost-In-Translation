@@ -9,35 +9,35 @@
 import Foundation
 
 public class LocaleUtitlies  {
-    public var calendar : NSCalendar
-    public var locale : NSLocale
-    let dayFormatter : NSDateFormatter
-    let monthFormatter : NSDateFormatter
-    init (locale : NSLocale) {
+    public var calendar : Calendar
+    public var locale : Locale
+    let dayFormatter : DateFormatter
+    let monthFormatter : DateFormatter
+    init (locale : Locale) {
         self.locale = locale;
-        self.calendar = locale.objectForKey(NSLocaleCalendar) as! NSCalendar
-        dayFormatter = NSDateFormatter()
+        self.calendar = locale.calendar
+        dayFormatter = DateFormatter()
         dayFormatter.locale = locale
         dayFormatter.dateFormat = "EEEE"
-        monthFormatter = NSDateFormatter()
+        monthFormatter = DateFormatter()
         monthFormatter.locale = locale
         monthFormatter.dateFormat = "MMMM"
     }
     
     convenience init() {
-        self.init(locale: NSLocale.currentLocale())
+        self.init(locale: Locale.current)
     }
     
     convenience init (localeIdentifier : String) {
-        self.init(locale: NSLocale(localeIdentifier: localeIdentifier))
+        self.init(locale: Locale(identifier: localeIdentifier))
     }
     
     public func weekdayNameForIndex(index : Int) -> String {
         let dateComp = NSDateComponents()
         dateComp.weekday = index;
         dateComp.day = index;
-        if let date = self.calendar.dateFromComponents(dateComp) {
-            return dayFormatter.stringFromDate(date)
+        if let date = self.calendar.date(from: dateComp as DateComponents) {
+            return dayFormatter.string(from: date)
         }
         return ""
     }
@@ -45,8 +45,8 @@ public class LocaleUtitlies  {
     public func monthNameForIndex(index : Int) -> String {
         let dateComp = NSDateComponents()
         dateComp.month = index;
-        if let date = self.calendar.dateFromComponents(dateComp) {
-            return monthFormatter.stringFromDate(date)
+        if let date = self.calendar.date(from: dateComp as DateComponents) {
+            return monthFormatter.string(from: date)
         }
         return ""
     }

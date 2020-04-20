@@ -19,12 +19,11 @@ class MasterTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 1
@@ -33,40 +32,40 @@ class MasterTableViewController: UITableViewController {
         }
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell!
-        
+
         switch indexPath.section {
         case 0:
-            cell = tableView.dequeueReusableCellWithIdentifier("BasicInfo", forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: "BasicInfo", for: indexPath)
             cell.textLabel!.text = "Bar"
             switch indexPath.row {
             case 0:
-                let identifier = localeUtilities.locale.localeIdentifier
+                let identifier = localeUtilities.locale.identifier
                 cell.detailTextLabel?.text = identifier
                 let text : String!
-                if let displayname = localeUtilities.locale.displayNameForKey(NSLocaleIdentifier, value: identifier) {
+                if let displayname = localeUtilities.locale.localizedString(forIdentifier: identifier) {
                     text = displayname;
                 }
                 else {
                     text = identifier
                 }
-                
+
                 cell.textLabel!.text = text
             default: break
-                
+
             }
         case 1:
-            cell = tableView.dequeueReusableCellWithIdentifier("DisclosureCell", forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: "DisclosureCell", for: indexPath)
             switch indexPath.row {
             case 0:
-                cell.textLabel?.text = NSBundle.mainBundle().preferredLocalizations.first!
+                cell.textLabel?.text = Bundle.main.preferredLocalizations.first!
                 cell.detailTextLabel?.text = "preferredLocalization"
             case 1:
-                cell.textLabel?.text = NSLocale.preferredLanguages().first!
+                cell.textLabel?.text = NSLocale.preferredLanguages.first!
                 cell.detailTextLabel?.text = "preferredLanguage"
             case 2:
-                cell.textLabel?.text = NSBundle.mainBundle().localizations.first!
+                cell.textLabel?.text = Bundle.main.localizations.first!
                 cell.detailTextLabel!.text = "localization"
             default:
                 break
@@ -82,24 +81,24 @@ class MasterTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
         if segue.identifier == "showObjects" {
-            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ArrayTableViewController
-            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            let controller = (segue.destination as! UINavigationController).topViewController as! ArrayTableViewController
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
             controller.navigationItem.leftItemsSupplementBackButton = true
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 if indexPath.section == 1 {
                     switch (indexPath.row) {
                     case 0:
-                        controller.objects = NSBundle.mainBundle().preferredLocalizations
+                        controller.objects = Bundle.main.preferredLocalizations
                         controller.title = NSLocalizedString("NSBundle Preferred Localizations", comment: "### Do not localize")
                     case 1:
-                        controller.objects = NSLocale.preferredLanguages()
+                        controller.objects = NSLocale.preferredLanguages
                         controller.title = NSLocalizedString("NSLocale Languages", comment: "### Do not localize")
                     case 2:
-                        controller.objects = NSBundle.mainBundle().localizations
+                        controller.objects = Bundle.main.localizations
                         controller.title = NSLocalizedString("NSBundle Localizations", comment: "### Do not localize")
 
                     default:

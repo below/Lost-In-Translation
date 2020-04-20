@@ -15,8 +15,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        languageLabel.text = "Preferred Localization: \(NSBundle.mainBundle().preferredLocalizations.first!)"
-        locIdentifierLabel.text = NSLocale.currentLocale().localeIdentifier
+        languageLabel.text = "Preferred Localization: \(Bundle.main.preferredLocalizations.first!)"
+        locIdentifierLabel.text = Locale.current.identifier
     }
 
     override func didReceiveMemoryWarning() {
