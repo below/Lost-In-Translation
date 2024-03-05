@@ -1,0 +1,42 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "You've lost your LA privileges" : {
+      "comment" : "Klingon: A fool and his head are soon parted",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ich will nicht nach Berlin!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You've lost your LA privileges"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On ne peut pas revenir en arrière"
+          }
+        },
+        "ksh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebenslang Köln-Kalk Verbot!"
+          }
+        },
+        "tlh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "    "
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
