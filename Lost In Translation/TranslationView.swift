@@ -10,10 +10,31 @@ import SwiftUI
 
 struct TranslationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("You've lost your LA privileges")
+                .padding()
+            Text("Preferred Localization: \(Bundle.main.preferredLocalizations.first!)")
+            Text(Locale.current.identifier)
+        }
     }
 }
 
-#Preview {
+#Preview("English") {
     TranslationView()
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("German") {
+    TranslationView()
+        .environment(\.locale, .init(identifier: "de"))
+}
+
+#Preview("Kölsch") {
+    TranslationView()
+        .environment(\.locale, .init(identifier: "ksh"))
+}
+
+#Preview("tlhIngan Hol") {
+    TranslationView()
+        .environment(\.locale, .init(identifier: "tlh"))
 }

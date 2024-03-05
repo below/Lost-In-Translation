@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB32C0701BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB32C06F1BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf */; };
+		CB4E605F2B96794000D8AA02 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E605E2B96794000D8AA02 /* TranslationView.swift */; };
 		CB4E60642B967BA300D8AA02 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CB4E60632B967BA300D8AA02 /* Localizable.xcstrings */; };
 		CB5600E31BDD310600E8B81B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5600E21BDD310600E8B81B /* AppDelegate.swift */; };
 		CB5600E51BDD310600E8B81B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5600E41BDD310600E8B81B /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		CB32C06F1BE767320026CEEF /* Klingon-pIqaD-HaSta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Klingon-pIqaD-HaSta.ttf"; path = "klingon-piqad-hasta-203/Klingon-pIqaD-HaSta.ttf"; sourceTree = "<group>"; };
 		CB32C0711BE769250026CEEF /* tlh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tlh; path = tlh.lproj/Main.strings; sourceTree = "<group>"; };
+		CB4E605E2B96794000D8AA02 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
 		CB4E60632B967BA300D8AA02 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		CB5600DF1BDD310600E8B81B /* Lost In Translation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lost In Translation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5600E21BDD310600E8B81B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				CB56010B1BDFEEBC00E8B81B /* LocaleUtilities.swift */,
 				CB5600E21BDD310600E8B81B /* AppDelegate.swift */,
 				CB5600E41BDD310600E8B81B /* ViewController.swift */,
+				CB4E605E2B96794000D8AA02 /* TranslationView.swift */,
 				CB56010F1BDFF2CA00E8B81B /* MasterTableViewController.swift */,
 				CB5601111BE02D5C00E8B81B /* ArrayTableViewController.swift */,
 				CB4E60632B967BA300D8AA02 /* Localizable.xcstrings */,
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4E605F2B96794000D8AA02 /* TranslationView.swift in Sources */,
 				CB56010E1BDFEFAD00E8B81B /* LocaleUtilities.swift in Sources */,
 				CB5601121BE02D5C00E8B81B /* ArrayTableViewController.swift in Sources */,
 				CB5600E51BDD310600E8B81B /* ViewController.swift in Sources */,
