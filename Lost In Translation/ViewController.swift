@@ -7,23 +7,12 @@
 //
 
 import UIKit
+import SwiftUI
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var languageLabel: UILabel!
-    @IBOutlet weak var locIdentifierLabel: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        languageLabel.text = "Preferred Localization: \(Bundle.main.preferredLocalizations.first!)"
-        locIdentifierLabel.text = Locale.current.identifier
+class ViewController: UIHostingController<TranslationView> {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(rootView: TranslationView())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
